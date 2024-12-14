@@ -124,3 +124,105 @@ img{
     text-align:center;
     box-shadow: 2px 2px 3px #999;  
 }
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Banner Styling */
+.banner {
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    padding: 100px 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1.5s ease;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    line-height: 1.8;
+    opacity: 0.9;
+    animation: fadeIn 2s ease;
+}
+
+.banner .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #ff7e5f;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.banner .btn:hover {
+    background-color: #feb47b;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Fade-in Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .banner {
+        padding: 60px 20px;
+    }
+
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    .banner .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
