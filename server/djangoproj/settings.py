@@ -35,8 +35,9 @@ ALLOWED_HOSTS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://etzionywanni-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/admin/login/?next=/admin'
+    "https://etzionywanni-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai"
 ]
+
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
